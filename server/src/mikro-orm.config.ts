@@ -12,4 +12,7 @@ export default {
   dbName: 'lireddit',
   type: 'postgresql',
   debug: !__prod__,
-} as Parameters<typeof MikroORM.init>[0]
+} as Parameters<typeof MikroORM.init>[0] //so that it has mikroorm type
+
+// to start the psql server on mac
+// pg_ctl -D /usr/local/var/postgres start
